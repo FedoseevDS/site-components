@@ -1,13 +1,17 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { Main } from './pages/main/main';
 import './styles/global.scss';
+import styles from './styles/styles.module.scss'
+import { Header } from './components/common/header/header';
 
 function App() {
   return (
-    <Routes>
-      <Route path='/' element={<Main />} />
-    </Routes>
+    <div className={styles.wrapper}>
+      <Header />
+      {/* <Routes> */}
+        {/* <Route path='/' element={<Main />} /> */}
+      {/* </Routes> */}
+    </div>
   );
 }
 

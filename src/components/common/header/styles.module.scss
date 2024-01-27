@@ -1,0 +1,49 @@
+.wrapper {
+  display: flex;
+  height: 150px;
+  border: 1px solid;
+}
+
+.logo {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  border-radius: 100px;
+  border: 1px solid;
+
+  & > img {
+    align-self: center;
+  }
+}
+
+.centralBlock {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-around;
+
+  & > h1 {
+    align-self: center;
+  }
+
+  & > div {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+    & > a {
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
+      font-size: 20px;
+
+      &:hover {
+        color: red;
+      }
+    }
+  }  
+}
