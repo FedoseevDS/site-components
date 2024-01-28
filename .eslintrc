@@ -19,6 +19,7 @@
   }, 
   "plugins": ["react", "react-hooks", "import"], 
   "rules": { 
+    "react/prop-types": "off",
     "import/no-unresolved": 0, 
     "import/no-extraneous-dependencies": ["error", { "devDependencies": true }], 
     "import/prefer-default-export": 0, 
