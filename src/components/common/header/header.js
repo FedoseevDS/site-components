@@ -1,26 +1,30 @@
 import React from 'react';
+
 import { Link } from 'react-router-dom';
+
+import logo from 'assets/img/logo.png';
+
 import styles from './styles.module.scss';
 
 export const Header = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.logo}>
-        <img src='' alt='Логотип' />
+        <img src={logo} alt='Логотип' />
       </div>
       <div className={styles.centralBlock}>
-        <h1>Заголовок страницы</h1>
+        <h1>Авторский проект - создание сайта с 0 до размещения в мировой паутине</h1>
         <div>
-          <Link to={'/'}>Главная</Link>
-          <Link to={''}>Кнопка 2</Link>
-          <Link to={''}>Кнопка 3</Link>
-          <Link to={''}>Кнопка 4</Link>
-          <Link to={''}>Кнопка 5</Link>
-          <Link to={''}>Кнопка 6</Link>
-          <Link to={''}>Кнопка 7</Link>
+          <Link to={'/'}>Инструкция</Link>
+          <Link to={''}>HTML</Link>
+          <Link to={''}>SCSS</Link>
+          <Link to={''}>JavaScript</Link>
+          <Link to={''}>React</Link>
+          <Link to={''}>React-router-dom</Link>
+          <Link to={''}>Redux</Link>
           <Link to={''}>Тестовые задания</Link>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

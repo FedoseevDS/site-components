@@ -1,13 +1,14 @@
 import React from 'react';
 
+import { SideBar } from 'components/common/sideBar/sideBar';
+
 import styles from './styles.module.scss';
-import { SideBar } from '../../components/common/sideBar/sideBar';
 
 export const Main = () => {
-    return (
-        <div className={styles.wrapper}>
-            <SideBar /> 
-            <div>Poov puroom</div> 
-        </div>
-    )
-} 
+  return (
+    <div className={styles.wrapper}>
+      <SideBar />
+      <div>Poov puroom</div>
+    </div>
+  );
+};
