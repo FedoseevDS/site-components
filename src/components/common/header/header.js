@@ -16,7 +16,7 @@ export const Header = () => {
         <h1>Авторский проект - создание сайта с 0 до размещения в мировой паутине</h1>
         <div>
           <Link to={'/'}>Инструкция</Link>
-          <Link to='#'>HTML</Link>
+          <Link to='html'>HTML</Link>
           <Link to='#'>SCSS</Link>
           <Link to='#'>JavaScript</Link>
           <Link to='#'>Frameworks</Link>

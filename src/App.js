@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 
 import { Header } from 'components/common/header/header';
 
+import { Html } from 'pages/html/html';
 import { Main } from 'pages/main/main';
 import { Test } from 'pages/test/test';
 
@@ -17,7 +18,8 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Main />} />
-        <Route path='/test' element={<Test />} />
+        <Route path='html' element={<Html />} />
+        <Route path='test' element={<Test />} />
       </Routes>
     </div>
   );
