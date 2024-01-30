@@ -1,8 +1,10 @@
+@import "styles/color";
+
 .wrapper {
   display: flex;
   height: 150px;
-  background-color: rgb(50, 50, 50);
-  border-radius: 20px;
+  background-color: $background;
+  border-radius: 10px;
 }
 
 .logo {
@@ -29,12 +31,12 @@
 
   & > h1 {
     align-self: center;
-    color: rgb(255, 255, 255);
+    color: $text;
   }
 
   & > div {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     gap: 60px;
     width: 90%;
     margin-left: auto;
@@ -42,12 +44,12 @@
 
     & > a {
       text-decoration: none;
-      color: rgb(255, 255, 255);
+      color: $text;
       cursor: pointer;
       font-size: 20px;
 
       &:hover {
-        color: red;
+        color: $hover;
       }
     }
   }  

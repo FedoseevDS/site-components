@@ -4,10 +4,10 @@ import { SideBar } from 'components/common/sideBar/sideBar';
 
 import styles from './styles.module.scss';
 
-export const PageContent = ({ children }) => {
+export const PageContent = ({ path, children }) => {
   return (
     <div className={styles.wrapper}>
-      <SideBar />
+      <SideBar path={path} />
       <div className={styles.content}>{children}</div>
     </div>
   );

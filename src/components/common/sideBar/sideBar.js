@@ -1,17 +1,21 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 import styles from './styles.module.scss';
 
-export const SideBar = () => {
+export const SideBar = ({ path }) => {
+  console.log('path', path);
+
   return (
     <div className={styles.wrapper}>
-      <a href='#'>clicer 1</a>
-      <a href='#'>clicer 2</a>
-      <a href='#'>clicer 3</a>
-      <a href='#'>clicer 4</a>
-      <a href='#'>clicer 5</a>
-      <a href='#'>clicer 6</a>
-      <a href='#'>clicer 7</a>
+      {path?.map(({ path, name, id }) => (
+        <div key={id}>
+          <Link to={path} className={styles.link}>
+            {name}
+          </Link>
+        </div>
+      ))}
     </div>
   );
 };

@@ -15,14 +15,14 @@ export const Header = () => {
       <div className={styles.centralBlock}>
         <h1>Авторский проект - создание сайта с 0 до размещения в мировой паутине</h1>
         <div>
-          <Link to={'/'}>Инструкция</Link>
+          <Link to={'/'}>Главная</Link>
           <Link to='html'>HTML</Link>
-          <Link to='#'>SCSS</Link>
+          {/* <Link to='#'>SCSS</Link>
           <Link to='#'>JavaScript</Link>
           <Link to='#'>Frameworks</Link>
           <Link to='#'>Библиотеки</Link>
           <Link to='#'>Компоненты</Link>
-          <Link to={'test'}>Тестовые задания</Link>
+          <Link to={'test'}>Тестовые задания</Link> */}
         </div>
       </div>
     </div>

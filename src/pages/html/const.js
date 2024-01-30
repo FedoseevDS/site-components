@@ -1,7 +1,12 @@
-export const pathHtml = [
-  { id: 1, div: '/div', name: 'div' },
-  { id: 2, BUTTON: '/button', name: 'button' },
-  { id: 3, INPUT: '/input', name: 'input' },
+import React from 'react';
+
+import { Button } from './button/button';
+import { Div } from './div/div';
+
+export const dataHtml = [
+  { id: 1, path: '/div', name: 'div', element: <Div /> },
+  { id: 2, path: '/button', name: 'button', element: <Button /> },
+  { id: 3, path: '/input', name: 'input' },
   // { id: 4, H1: '/h1', name: 'h1' },
   // { id: 5, H2: '/h2', name: 'h2' },
   // { id: 6, H3: '/h3', name: 'h3' },
