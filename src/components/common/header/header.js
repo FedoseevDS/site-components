@@ -15,7 +15,7 @@ export const Header = () => {
       <div className={styles.centralBlock}>
         <h1>Авторский проект - создание сайта с 0 до размещения в мировой паутине</h1>
         <div>
-          <Link to={'/'}>Главная</Link>
+          <Link to='/'>Главная</Link>
           <Link to='html'>HTML</Link>
           {/* <Link to='#'>SCSS</Link>
           <Link to='#'>JavaScript</Link>

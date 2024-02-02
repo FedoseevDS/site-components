@@ -4,18 +4,20 @@ import { Link } from 'react-router-dom';
 
 import styles from './styles.module.scss';
 
-export const SideBar = ({ path }) => {
-  console.log('path', path);
+export const SideBar = ({ data }) => {
+  console.log('data', data);
 
-  return (
-    <div className={styles.wrapper}>
-      {path?.map(({ path, name, id }) => (
-        <div key={id}>
-          <Link to={path} className={styles.link}>
-            {name}
-          </Link>
+  const showPanel = () => {
+    return data.map(({ path, name, id }) => {
+      return (
+        <div key={id} className={styles.link}>
+          <div>
+            <Link to={path}>{name}</Link>
+          </div>
         </div>
-      ))}
-    </div>
-  );
+      );
+    });
+  };
+
+  return <div className={styles.wrapper}>{showPanel()}</div>;
 };

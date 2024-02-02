@@ -3,23 +3,34 @@
 .wrapper {
     box-sizing: border-box;
     width: 200px;
-    height: 500px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    }
+
+
+.link {
+    box-sizing: border-box;
+    background: $background;
+    width: 100%;
 
     & > div {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        
+        & > a {
+            text-decoration: none;
+            color: $text;
+            font-size: 20px;
+            padding: 5px 10px;
+            
+            &:hover {
+            color: $hover;
+            background: rgba(255, 255, 255, 0.419);
+        }
     }
+
 }
-
-.link {
-    text-decoration: none;
-    background: $background;
-    color: $text;
-    padding: 5px 10px;
-    font-size: 20px;
-
-    &:hover {
-        color: $hover;
-    }
 }

@@ -2,18 +2,22 @@ import React from 'react';
 
 import { Route, Routes } from 'react-router-dom';
 
-import { PageContent } from 'components/common/pageContent/pageContent';
+import { SideBar } from 'components/common/sideBar/sideBar';
 
 import { dataHtml } from './const';
+import { divConfig } from './div/config';
+import { Div } from './div/div';
+import styles from './styles.module.scss';
 
 export const Html = () => {
   return (
-    <PageContent path={dataHtml}>
+    <div className={styles.wrapper}>
+      <div>
+        <SideBar data={dataHtml} />
+      </div>
       <Routes>
-        {dataHtml.map(({ id, ...props }) => (
-          <Route key={id} {...props}></Route>
-        ))}
+        <Route path='/div' element={<Div data={divConfig} />} />
       </Routes>
-    </PageContent>
+    </div>
   );
 };

@@ -6,7 +6,6 @@ import { Header } from 'components/common/header/header';
 
 import { Html } from 'pages/html/html';
 import { Main } from 'pages/main/main';
-import { Test } from 'pages/test/test';
 
 import styles from 'styles/styles.module.scss';
 
@@ -18,8 +17,7 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Main />} />
-        <Route path='html' element={<Html />} />
-        <Route path='test' element={<Test />} />
+        <Route path='html/*' element={<Html />} />
       </Routes>
     </div>
   );

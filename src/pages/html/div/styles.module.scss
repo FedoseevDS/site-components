@@ -1,0 +1,33 @@
+.wrapper {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.name {
+  margin: 0;
+}
+
+.discription {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.attributes {
+  margin-top: 10px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  & > div {
+    display: flex;    
+
+   & > h4 {
+      margin: 0;
+    }
+
+    & > div {
+      margin-left: 20px;
+    }
+  }
+}
